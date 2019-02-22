@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="92C83AC0-6E4C-4145-B7FA-3C71FB090D7C.png" translatesAutoresizingMaskIntoConstraints="NO" id="vIO-Pw-Kqn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-army-banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="vIO-Pw-Kqn">
                                 <rect key="frame" x="0.0" y="20" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="92C83AC0-6E4C-4145-B7FA-3C71FB090D7C.png" width="1500" height="500"/>
+        <image name="red-army-banner.png" width="1500" height="500"/>
     </resources>
 </document>
