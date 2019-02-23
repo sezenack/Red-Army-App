@@ -12,6 +12,7 @@
 		145E2BA32220A34E002B9FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145E2BA12220A34E002B9FD6 /* Main.storyboard */; };
 		145E2BA52220A351002B9FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145E2BA42220A351002B9FD6 /* Assets.xcassets */; };
 		145E2BA82220A351002B9FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145E2BA62220A351002B9FD6 /* LaunchScreen.storyboard */; };
+		368A1EFB2220AA460031E812 /* red-army-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 368A1EFA2220AA450031E812 /* red-army-banner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		145E2BA42220A351002B9FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145E2BA72220A351002B9FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145E2BA92220A351002B9FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368A1EFA2220AA450031E812 /* red-army-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-army-banner.png"; path = "../../red-army-banner.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		145E2B9C2220A34E002B9FD6 /* redArmyApp */ = {
 			isa = PBXGroup;
 			children = (
+				368A1EFA2220AA450031E812 /* red-army-banner.png */,
 				145E2B9D2220A34E002B9FD6 /* AppDelegate.swift */,
 				145E2B9F2220A34E002B9FD6 /* ViewController.swift */,
 				145E2BA12220A34E002B9FD6 /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				145E2BA82220A351002B9FD6 /* LaunchScreen.storyboard in Resources */,
+				368A1EFB2220AA460031E812 /* red-army-banner.png in Resources */,
 				145E2BA52220A351002B9FD6 /* Assets.xcassets in Resources */,
 				145E2BA32220A34E002B9FD6 /* Main.storyboard in Resources */,
 			);
