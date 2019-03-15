@@ -34,5 +34,23 @@ class ViewController: UIViewController {
             print("segue to next view")
         }
     }
+
+    @IBAction func NewsButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func StandingsButton(_ sender: Any) {
+    
+    }
+    
+    @IBAction func ScheduleButton(_ sender: Any) {
+    
+    }
+ 
+    @IBAction func StatsButon(_ sender: Any) {
+    
+    }
+    
+
 }
 
