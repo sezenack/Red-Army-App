@@ -12,7 +12,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib
+        
+        //////////////////SWIPE LEFT AND SWIPE RIGHT GESTURES//////////////////
+        
+        // LEFT SWIPE
+        let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        leftSwipeGesture.direction = .left
+        self.view.addGestureRecognizer(leftSwipeGesture)
+        // RIGHT SWIPE
+        let rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        rightSwipeGesture.direction = .right
+        self.view.addGestureRecognizer(rightSwipeGesture)
+    }
+    
+    // Take the gesture input and perform an action
+    @objc func receiveAndDoThis(gesture: UISwipeGestureRecognizer) -> Void {
+        if gesture.direction == UISwipeGestureRecognizer.Direction.left {
+            print("segue to next view")
+        } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
+            print("segue to next view")
+        }
     }
 
     @IBAction func NewsButton(_ sender: Any) {
@@ -31,5 +51,6 @@ class ViewController: UIViewController {
     
     }
     
+
 }
 
