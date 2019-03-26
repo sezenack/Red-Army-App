@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class PageViewController : UIViewController : ViewController {
+    var index = 0
+    
+    override funct viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+
+}
