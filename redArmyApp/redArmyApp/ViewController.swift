@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     // Take the gesture input and perform an action
     @objc func receiveAndDoThis(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.left {
-            print("segue to next view")
+            print("segue to previous view")
         } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
             print("segue to next view")
         }
