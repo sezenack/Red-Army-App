@@ -3,7 +3,6 @@
 //  redArmyApp
 //
 //  Created by gary on 2/22/19.
-//  Copyright © 2019 RedArmyApp. All rights reserved.
 //
 
 import UIKit
