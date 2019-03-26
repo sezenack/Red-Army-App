@@ -3,7 +3,6 @@
 //  redArmyApp
 //
 //  Created by gary on 2/22/19.
-//  Copyright © 2019 RedArmyApp. All rights reserved.
 //
 
 import UIKit
@@ -46,15 +45,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func StandingsButton(_ sender: Any) {
-		    print("2")
+		print("2")
     }
 
     @IBAction func ScheduleButton(_ sender: Any) {
-		    print("3")
+		print("3")
     }
 
     @IBAction func StatsButon(_ sender: Any) {
-		    print("4")
+	    print("4")
     }
 
 }
