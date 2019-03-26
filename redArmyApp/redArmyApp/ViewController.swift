@@ -16,23 +16,26 @@ class ViewController: UIViewController {
         //////////////////SWIPE LEFT AND SWIPE RIGHT GESTURES//////////////////
         ///////////////////////////////////////////////////////////////////////
         // LEFT SWIPE
-        let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
-        leftSwipeGesture.direction = .left
+        var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(leftSwipeGesture)
         // RIGHT SWIPE
-        let rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
-        rightSwipeGesture.direction = .right
+        var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(rightSwipeGesture)
 
 
     }
 
     // Take the swipe gesture input and perform an action
-    @objc func receiveAndDoThis(gesture: UISwipeGestureRecognizer) -> Void {
-        if gesture.direction == UISwipeGestureRecognizer.Direction.left {
-            print("segue to previous view")
-        } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
-            print("segue to next view")
+    @objc func receiveAndDoThis(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.Right:
+                    print("right")
+                case UISwipeGestureRecognizerDirection.Left:
+                    print("left")
+            }
         }
     }
 
