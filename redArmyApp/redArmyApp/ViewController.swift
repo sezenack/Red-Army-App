@@ -3,7 +3,6 @@
 //  redArmyApp
 //
 //  Created by gary on 2/22/19.
-//  Copyright © 2019 RedArmyApp. All rights reserved.
 //
 
 import UIKit
@@ -12,10 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib
-        
+
+		///////////////////////////////////////////////////////////////////////
         //////////////////SWIPE LEFT AND SWIPE RIGHT GESTURES//////////////////
-        
+        ///////////////////////////////////////////////////////////////////////
         // LEFT SWIPE
         let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
         leftSwipeGesture.direction = .left
@@ -24,9 +23,11 @@ class ViewController: UIViewController {
         let rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
         rightSwipeGesture.direction = .right
         self.view.addGestureRecognizer(rightSwipeGesture)
+
+
     }
-    
-    // Take the gesture input and perform an action
+
+    // Take the swipe gesture input and perform an action
     @objc func receiveAndDoThis(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.left {
             print("segue to previous view")
@@ -35,22 +36,24 @@ class ViewController: UIViewController {
         }
     }
 
+	///////////////////////////////////////////////////////////////////////
+	//////////////////////////////BUTTON INPUT/////////////////////////////
+	///////////////////////////////////////////////////////////////////////
+
     @IBAction func NewsButton(_ sender: Any) {
-        
+        print("1")
     }
-    
+
     @IBAction func StandingsButton(_ sender: Any) {
-    
+		print("2")
     }
-    
+
     @IBAction func ScheduleButton(_ sender: Any) {
-        
+		print("3")
     }
- 
+
     @IBAction func StatsButon(_ sender: Any) {
-    
+	    print("4")
     }
-    
 
 }
-
