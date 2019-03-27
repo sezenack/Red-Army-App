@@ -28,11 +28,11 @@ class ViewController: UIViewController {
     }
 
     // Take the swipe gesture input and perform an action
-    @objc func receiveAndDoThis(gesture: UISwipeGestureRecognizer) -> Void {
+    @objc func receiveAndDoThis(_ gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.left {
-            print("segue to previous view")
+            print("segue to next view, swiped left")
         } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
-            print("segue to next view")
+            print("segue to previous view, swiped right")
         }
     }
 
@@ -41,19 +41,19 @@ class ViewController: UIViewController {
 	///////////////////////////////////////////////////////////////////////
 
     @IBAction func NewsButton(_ sender: Any) {
-        print("1")
+        print("News")
     }
 
     @IBAction func StandingsButton(_ sender: Any) {
-		print("2")
+		print("Standings")
     }
 
     @IBAction func ScheduleButton(_ sender: Any) {
-		print("3")
+		print("Schedule")
     }
 
     @IBAction func StatsButon(_ sender: Any) {
-	    print("4")
+	    print("Stats")
     }
 
 }
