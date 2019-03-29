@@ -16,12 +16,12 @@ class ViewController: UIViewController {
         //////////////////SWIPE LEFT AND SWIPE RIGHT GESTURES//////////////////
         ///////////////////////////////////////////////////////////////////////
         // LEFT SWIPE
-        let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
-        leftSwipeGesture.direction = .left
+        var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(leftSwipeGesture)
         // RIGHT SWIPE
-        let rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
-        rightSwipeGesture.direction = .right
+        var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(rightSwipeGesture)
 
     }
