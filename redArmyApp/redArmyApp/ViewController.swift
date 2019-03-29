@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         rightSwipeGesture.direction = .right
         self.view.addGestureRecognizer(rightSwipeGesture)
 
-
     }
 
     // Take the swipe gesture input and perform an action
