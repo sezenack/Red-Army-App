@@ -9,12 +9,9 @@
 import Foundation
 import UIKit
 
-class PageViewController : UIViewController : ViewController {
+class PageViewController : UIViewController {
     var index = 0
     
-    override funct viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
+    
+    
 }

@@ -74,8 +74,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-iE-6f4">
-                                <rect key="frame" x="0.0" y="92" width="375" height="575"/>
-                              
+                                <rect key="frame" x="0.0" y="147" width="375" height="540"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                             </scrollView>
@@ -85,7 +84,6 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="PSv-TY-m4S"/>
             </objects>
             <point key="canvasLocation" x="-36" y="736.28185907046486"/>
         </scene>
@@ -94,6 +92,7 @@
             <objects>
                 <pageViewController storyboardIdentifier="Standings" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KJH-Ul-Zej" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9F-BE-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="PVy-iB-dBj"/>
             </objects>
             <point key="canvasLocation" x="849" y="90"/>
         </scene>
@@ -164,13 +163,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="XYQ-k0-fWv"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="EjK-EF-hNo" appends="YES" id="L87-Dy-mX0"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0B-B3-Zpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="EjK-EF-hNo"/>
             </objects>
             <point key="canvasLocation" x="598" y="736"/>
         </scene>
@@ -241,13 +236,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="m8j-V0-Qhp"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="gXG-b0-Cno" appends="YES" id="h95-7L-BXD"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cQ-9G-hsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="gXG-b0-Cno"/>
             </objects>
             <point key="canvasLocation" x="1231" y="736"/>
         </scene>
@@ -318,13 +309,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="kZX-rw-bYl"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="wPL-eG-2U2" appends="YES" id="MYM-Kv-Yo9"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvD-CO-p4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="wPL-eG-2U2"/>
             </objects>
             <point key="canvasLocation" x="1866" y="735"/>
         </scene>
