@@ -92,7 +92,6 @@
             <objects>
                 <pageViewController storyboardIdentifier="Standings" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KJH-Ul-Zej" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9F-BE-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="PVy-iB-dBj"/>
             </objects>
             <point key="canvasLocation" x="849" y="90"/>
         </scene>
