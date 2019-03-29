@@ -74,7 +74,8 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-iE-6f4">
-                                <rect key="frame" x="0.0" y="147" width="375" height="522"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                              
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                             </scrollView>
@@ -91,7 +92,7 @@
         <!--Page View Controller-->
         <scene sceneID="brE-Ip-2gE">
             <objects>
-                <pageViewController storyboardIdentifier="Standings" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KJH-Ul-Zej" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="Standings" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KJH-Ul-Zej" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9F-BE-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="849" y="90"/>
