@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+	let segueTracker = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,11 +17,11 @@ class ViewController: UIViewController {
         ///////////////////////////////////////////////////////////////////////
         // LEFT SWIPE
         var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
-        leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
+        leftSwipeGesture.direction = UISwipeGestureRecognizer.Direction.Left
         self.view.addGestureRecognizer(leftSwipeGesture)
         // RIGHT SWIPE
         var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
-        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
+        rightSwipeGesture.direction = UISwipeGestureRecognizer.Direction.Right
         self.view.addGestureRecognizer(rightSwipeGesture)
 
     }
@@ -29,12 +29,28 @@ class ViewController: UIViewController {
     // Take the swipe gesture input and perform an action
     @objc func receiveAndDoThis(_ gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.left {
+			increment()
             print("segue to next view, swiped left")
         } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
+			decrement()
             print("segue to previous view, swiped right")
         }
     }
 
+	@objc func increment() {
+		if segueTracker < 3 {
+			segueTracker += 1
+			print(segueTracker)
+		}	
+	}
+	
+	@objc func decrement() {
+		if segueTracker > 0 {
+			segueTracker -= 1
+			print(segueTracker)
+		}
+	}
+	
 	///////////////////////////////////////////////////////////////////////
 	//////////////////////////////BUTTON INPUT/////////////////////////////
 	///////////////////////////////////////////////////////////////////////
