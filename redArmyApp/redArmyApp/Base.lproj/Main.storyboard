@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="redArmyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="News" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="redArmyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,9 +25,6 @@
                                 <state key="normal" title="News">
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="NewsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVl-32-dmk"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-army-banner" translatesAutoresizingMaskIntoConstraints="NO" id="vIO-Pw-Kqn">
                                 <rect key="frame" x="0.0" y="20" width="375" height="97"/>
@@ -91,23 +88,28 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Pkz-WU-Anj" kind="show" identifier="Standings" animates="NO" id="e53-El-LYT"/>
+                        <segue destination="cOR-BA-vHI" kind="show" identifier="Stats" id="B8G-Rh-nOA"/>
+                        <segue destination="imh-T4-kTf" kind="show" identifier="Schedule" id="W7k-hk-7op"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="736.28185907046486"/>
+            <point key="canvasLocation" x="-25" y="734"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="brE-Ip-2gE">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KJH-Ul-Zej" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KJH-Ul-Zej" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9F-BE-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="849" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Standings Controller-->
         <scene sceneID="nL2-2j-s9D">
             <objects>
-                <viewController id="Pkz-WU-Anj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Standings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pkz-WU-Anj" customClass="StandingsController" customModule="redArmyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gpo-xQ-Ceq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +133,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="NewsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51Z-n8-v0R"/>
+                                    <action selector="NewsButton:" destination="Pkz-WU-Anj" eventType="touchUpInside" id="7Pq-Qj-7WH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-It-3BK">
@@ -141,9 +143,6 @@
                                 <state key="normal" title="Standings">
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="StandingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcR-ut-WzZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d90-8T-bWp">
                                 <rect key="frame" x="186" y="117" width="93" height="30"/>
@@ -153,7 +152,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="StatsButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOq-wH-xJg"/>
+                                    <action selector="StatsButton:" destination="Pkz-WU-Anj" eventType="touchUpInside" id="1iN-aL-Jcb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfQ-9P-pwo">
@@ -164,12 +163,12 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="ScheduleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i33-JM-YRL"/>
+                                    <action selector="ScheduleButton:" destination="Pkz-WU-Anj" eventType="touchUpInside" id="15M-M6-dQl"/>
                                 </connections>
                             </button>
                             <progressView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="qzv-Q2-BzM">
                                 <rect key="frame" x="93" y="145" width="93" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="progressTintColor" red="1" green="0.036245735243500832" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standings Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuk-aY-eiI">
@@ -184,15 +183,20 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="XYQ-k0-fWv"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="News" animates="NO" id="ZaK-EJ-3Ek"/>
+                        <segue destination="cOR-BA-vHI" kind="show" identifier="Stats" id="eEc-0u-tMi"/>
+                        <segue destination="imh-T4-kTf" kind="show" identifier="Schedule" id="3ad-fE-VwE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0B-B3-Zpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597.60000000000002" y="735.38230884557731"/>
+            <point key="canvasLocation" x="594" y="1406"/>
         </scene>
-        <!--View Controller-->
+        <!--Stats Controller-->
         <scene sceneID="UIV-4v-xwZ">
             <objects>
-                <viewController id="cOR-BA-vHI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Stats" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cOR-BA-vHI" customClass="StatsController" customModule="redArmyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IJX-1C-kLM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +220,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="NewsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMb-SU-9jd"/>
+                                    <action selector="NewsButton:" destination="cOR-BA-vHI" eventType="touchUpInside" id="9gC-yF-azW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg8-iO-KnD">
@@ -227,7 +231,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="StandingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xF-kr-KKa"/>
+                                    <action selector="StandingsButton:" destination="cOR-BA-vHI" eventType="touchUpInside" id="bdx-Vw-feI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgV-9M-Spz">
@@ -237,9 +241,6 @@
                                 <state key="normal" title="Stats">
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="StatsButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cm7-wa-Uk7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3K-wA-OH3">
                                 <rect key="frame" x="279" y="117" width="93" height="30"/>
@@ -249,7 +250,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="ScheduleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmf-zQ-F6b"/>
+                                    <action selector="ScheduleButton:" destination="cOR-BA-vHI" eventType="touchUpInside" id="xv6-Zv-iN2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stats Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iv3-lD-o2l">
@@ -264,15 +265,20 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="m8j-V0-Qhp"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="News" id="w58-Rp-oOk"/>
+                        <segue destination="Pkz-WU-Anj" kind="show" identifier="Standings" id="HKp-Sb-n9E"/>
+                        <segue destination="imh-T4-kTf" kind="show" identifier="Schedule" id="dCp-ov-Ubf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cQ-9G-hsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="736"/>
+            <point key="canvasLocation" x="1390" y="1406"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule Controller-->
         <scene sceneID="gBk-z0-hHO">
             <objects>
-                <viewController id="imh-T4-kTf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Schedule" useStoryboardIdentifierAsRestorationIdentifier="YES" id="imh-T4-kTf" customClass="ScheduleController" customModule="redArmyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aqc-Iv-3x5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +302,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="NewsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLo-kG-n3V"/>
+                                    <action selector="NewsButton:" destination="imh-T4-kTf" eventType="touchUpInside" id="3wi-a7-14O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiP-qs-cpN">
@@ -307,7 +313,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="StandingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yes-34-bw8"/>
+                                    <action selector="StandingsButton:" destination="imh-T4-kTf" eventType="touchUpInside" id="lwJ-lF-Jln"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFR-WK-iOv">
@@ -318,7 +324,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="StatsButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BE6-AF-wVu"/>
+                                    <action selector="StatsButton:" destination="imh-T4-kTf" eventType="touchUpInside" id="cp6-j8-Lp2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U4-Qk-zkg">
@@ -328,9 +334,6 @@
                                 <state key="normal" title="Schedule">
                                     <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="ScheduleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hI-YO-6ga"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schedule Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-KB-YWs">
                                 <rect key="frame" x="118" y="318" width="139" height="30"/>
@@ -344,6 +347,11 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="kZX-rw-bYl"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="News" id="HKX-lu-kqC"/>
+                        <segue destination="Pkz-WU-Anj" kind="show" identifier="Standings" id="Pzu-5U-imH"/>
+                        <segue destination="cOR-BA-vHI" kind="show" identifier="Stats" id="w3J-qx-21Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvD-CO-p4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,4 +361,10 @@
     <resources>
         <image name="red-army-banner" width="1500" height="500"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dCp-ov-Ubf"/>
+        <segue reference="w3J-qx-21Q"/>
+        <segue reference="Pzu-5U-imH"/>
+        <segue reference="HKX-lu-kqC"/>
+    </inferredMetricsTieBreakers>
 </document>
