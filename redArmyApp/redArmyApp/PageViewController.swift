@@ -12,6 +12,4 @@ import UIKit
 class PageViewController : UIViewController {
     var index = 0
     
-    
-    
 }
