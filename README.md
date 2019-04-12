@@ -4,6 +4,5 @@ an interactive fan mobile app for RPI athletics
 Getting Started:
 - A Mac PC or a Mac emulator
 - XCode
-- UI mock up design
 
-Make your UI in XCode, then code the back end and add in the functionalities that you want
+Start up XCode and clone the project into your local repository. Open the project in XCode.  Press the play button at the top right to run the simulator to play around with the app.
