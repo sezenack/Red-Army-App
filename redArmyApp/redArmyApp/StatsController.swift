@@ -35,7 +35,7 @@ class StatsController: UIViewController {
             
         } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
             print("segue to previous view, swiped right")
-            performSegue(withIdentifier: "Stats", sender: self)
+            performSegue(withIdentifier: "Standings", sender: self)
         }
         
     }
