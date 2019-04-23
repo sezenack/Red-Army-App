@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "Standings", sender: self)
         } else if gesture.direction == UISwipeGestureRecognizer.Direction.right {
             print("segue to previous view, swiped right")
-            performSegue(withIdentifier: "Stats", sender: self)
+            performSegue(withIdentifier: "Schedule", sender: self)
         }
         
     }

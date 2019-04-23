@@ -8,7 +8,17 @@
 
 import UIKit
 
-class StandingsController: UIViewController {
+class StandingsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 14
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ECACStandings", for: indexPath)
+        cell.textLabel?.text = "ECAC Standings 2018-2019"
+        return cell
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +27,11 @@ class StandingsController: UIViewController {
         //////////////////SWIPE LEFT AND SWIPE RIGHT GESTURES//////////////////
         ///////////////////////////////////////////////////////////////////////
         // LEFT SWIPE
-        var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
         leftSwipeGesture.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(leftSwipeGesture)
         // RIGHT SWIPE
-        var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
+        let rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(receiveAndDoThis))
         rightSwipeGesture.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(rightSwipeGesture)
         
